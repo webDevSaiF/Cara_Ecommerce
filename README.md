@@ -1,7 +1,7 @@
 #Live Preview Link:
 https://webdevsaif.github.io/Cara_Ecommerce/
 
-#Cara Ecommerce
+#Cara Ecommerce:
 Cara Ecommerce is a simple web project built with HTML, CSS, and JavaScript, focusing on providing a responsive and user-friendly e-commerce experience.
 
 #Features
