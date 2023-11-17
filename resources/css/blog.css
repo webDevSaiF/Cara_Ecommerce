@@ -1,0 +1,21 @@
+.page-header.blog-header {
+  background-image: url("./img/banner/b19.jpg");
+}
+.bg-primary {
+  background-color: var(--primary-color);
+}
+.blogSite .blog-section .blog-card {
+  padding: 40px;
+}
+.blogSite .blog-section .blog-card .blog-img img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+.blogSite .blog-section h4 {
+  font-size: 36px;
+}
+.blogSite .blog-section p {
+  font-size: 16px;
+  line-height: 25px;
+}

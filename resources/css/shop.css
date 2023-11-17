@@ -1,0 +1,244 @@
+/* ==CSS INDEXES==
+01.HEADER
+02.PAGE HEADER
+03.FEATURE PRODUCTS SECTION
+04.PAGINATION SECTION
+05.NEWSLETTER SECTION
+06.FOOTER SECTION
+===========????===========*/
+/* ==01.HEADER CSS== */
+.header-section {
+  background-color: var(--light-bg-color);
+  box-shadow: var(--box-shadow-01);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.header-section .c-column > .inner {
+  justify-content: flex-end;
+  flex-direction: row;
+}
+.header-section .c-row .inner .c-column:nth-child(1) {
+  flex: 0 1 40%;
+  max-width: 40%;
+}
+.header-section img {
+  width: fit-content;
+}
+.header-section .nav--bar .nav--item {
+  padding: 0 2rem;
+  position: relative;
+}
+.header-section .nav--bar .nav--item .nav--link {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--headline-color);
+  transition: all 0.4s ease;
+}
+.header-section .nav--bar .nav--item .nav--link:hover,
+.header-section .nav--bar .nav--item .nav--link.active {
+  color: var(--secondary-color);
+}
+
+.header-section .nav--bar .nav--item .nav--link.active::before,
+.header-section .nav--bar .nav--item .nav--link:hover::after {
+  content: "";
+  width: 30%;
+  height: 4px;
+  background-color: var(--secondary-color);
+  position: absolute;
+  top: 2.2rem;
+  left: 2.1rem;
+}
+.header-section .ham-menu {
+  display: none;
+}
+/* ==02.PAGE HEADER CSS== */
+.page-header {
+  background-image: url("./img/banner/b1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 30vh; */
+  display: flex;
+  align-items: center;
+}
+.page-header h2,
+.page-header p {
+  color: var(--white-color);
+}
+
+/* ==03.FEATURE PRODUCTS SECTION== */
+.f-products > .inner {
+  max-width: 1160px;
+}
+.f-products .product-card {
+  width: 23%;
+  max-width: 25rem;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--feature-box-border-color);
+  cursor: pointer;
+  border-radius: 2.5rem;
+  box-shadow: var(--feature-box-shadow);
+  transition: all 0.4s ease;
+}
+.f-products .product-card:hover {
+  box-shadow: var(--product-card-box-shadow);
+}
+.f-products .product-card img {
+  border-radius: 2rem;
+}
+.f-products .product-card .product-des .brand-name {
+  font-size: 1.2rem;
+  color: var(--product-brand-name-color);
+}
+.f-products .product-card .product-des .product-name {
+  font-size: 1.4rem;
+  color: var(--headline-color);
+}
+.f-products .product-card .product-des .star-icon {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+}
+.f-products .product-card .product-des .product-price h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.f-products .product-card .cart {
+  position: relative;
+}
+.f-products .product-card .cart .cart-icon {
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+
+  width: 28px;
+  height: 28px;
+  line-height: 40px;
+  color: var(--primary-color);
+  background-color: var(--product-cart-icon-bg);
+  border-radius: 5rem;
+  font-weight: 500;
+  border: 1px solid var(--product-cart-icon-border);
+  transition: all 0.4s ease;
+}
+.f-products .product-card .cart .cart-icon:hover {
+  transform: scale(1.1) rotate(360deg);
+}
+.f-products .product-container > .inner {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 4rem;
+}
+
+/* ==04.PAGINATION SECTION== */
+.pagination .pagination-number a:link {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 12px 20px;
+  border-radius: 4px;
+  transition: all 0.4s ease;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.pagination .pagination-number a:hover {
+  opacity: 0.8;
+}
+
+/* ==05.NEWSLETTER SECTION CSS== */
+.newsletter-section {
+  background-image: url("./img/banner/b14.png");
+  background-size: 100%;
+  background-position: 20% 30%;
+  background-repeat: no-repeat;
+  background-color: var(--dark-color-2);
+  height: 25vh;
+  display: flex;
+  align-items: center;
+}
+.newsletter-section > .inner {
+  width: 100%;
+}
+.newsletter-section h4 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--white-color);
+}
+
+.newsletter-section p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--white-color);
+}
+.newsletter-section p span {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.newsletter-section .newsletter-form .c-wrapper div {
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.newsletter-section .newsletter-form input[type="email"] {
+  height: 4.125rem;
+  padding: 0 1.25rem;
+  width: 100%;
+  border: 1px solid transparent;
+  outline: 0;
+  font-size: 1.6rem;
+}
+.newsletter-section .newsletter-form .btn {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  white-space: nowrap;
+  height: 4.125rem;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0;
+}
+.newsletter-section .newsletter-form .btn:hover {
+  transform: scale(1);
+  background-color: var(--secondary-color);
+}
+/* ==06.FOOTER SECTION== */
+.footer-section .c-row > .inner {
+  align-items: flex-start;
+}
+.footer-section img {
+  max-width: fit-content;
+}
+.footer-section .social-icons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 14rem;
+}
+.footer-section .social-icons ion-icon {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  transition: all 0.4s ease;
+}
+.footer-section .social-icons ion-icon:hover {
+  color: var(--secondary-color);
+}
+.footer-section p {
+  font-size: 1.5rem;
+  color: var(--product-brand-name-color);
+}
+.footer-section a:link {
+  font-size: 1.5rem;
+  color: var(--product-brand-name-color);
+  transition: all 0.4s ease;
+}
+.footer-section a:hover {
+  color: var(--primary-color);
+}
+.footer-section .mobile-store {
+  display: flex;
+  gap: 10px;
+}
+.footer-section .mobile-store img {
+  border: 1px solid var(--light-text-color);
+}
